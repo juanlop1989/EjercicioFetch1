@@ -9,7 +9,7 @@ fetch("https://api.escuelajs.co/api/v1/users")
 
         for (let usuario of data){
             tabla += `<tr><td>${usuario.email}</td>
-                        <td>${usuario.password}</td>
+                        <td><input type="password" value="${usuario.password}" readonly style="background: none; border: none; outline: none; color: inherit;"></td>
                         <td>${usuario.name}</td>
                         <td><img src="${usuario.avatar}" alt="Avatar" width="80"></td></tr>`
         }
